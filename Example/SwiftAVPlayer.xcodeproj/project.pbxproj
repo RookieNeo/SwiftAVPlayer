@@ -40,11 +40,11 @@
 		607FACE51AFB9204008FA782 /* SwiftAVPlayer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAVPlayer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7D97770E81C3F189BF02362B /* SwiftAVPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftAVPlayer.podspec; path = ../SwiftAVPlayer.podspec; sourceTree = "<group>"; };
-		9B6E4F5EAD886AE44FBF30D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7D97770E81C3F189BF02362B /* SwiftAVPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftAVPlayer.podspec; path = ../SwiftAVPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B6E4F5EAD886AE44FBF30D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9F18EFC5BDFC6D4AC4E77F22 /* Pods_SwiftAVPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAVPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D91E92B8996FF2838E8356 /* Pods-SwiftAVPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAVPlayer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAVPlayer_Example/Pods-SwiftAVPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C66F71294FFB19A862FCCC17 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C66F71294FFB19A862FCCC17 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E11451F85BA9F0DB1ED03027 /* Pods_SwiftAVPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAVPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE86FE000CC8C163F1D2642 /* Pods-SwiftAVPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAVPlayer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAVPlayer_Example/Pods-SwiftAVPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -287,10 +287,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAVPlayer_Example/Pods-SwiftAVPlayer_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftAVPlayer/SwiftAVPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftAVPlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,6 @@
+framework module SwiftAVPlayer {
+  umbrella header "SwiftAVPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

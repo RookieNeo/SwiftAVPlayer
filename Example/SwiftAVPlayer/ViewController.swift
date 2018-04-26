@@ -7,11 +7,13 @@
 //
 
 import UIKit
-
+import SwiftAVPlayer
 class ViewController: UIViewController {
 
+    @IBOutlet weak var testView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        SwiftPlayerManager.share.newPlayer(withURL: URL(string: "https://ix86.win:8081/video/a.mp4")!, contentView: testView)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
