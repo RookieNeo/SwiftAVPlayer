@@ -9,6 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftAVPlayer'
   s.version          = '0.1.0'
+  s.swift_version    = '4.0'
   s.summary          = 'A swift tool for AVFoundation easily to use.'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +31,8 @@ A swift tool for AVFoundation easily to use.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SwiftAVPlayer/Classes/**/*'
-  s.resource = 'SwiftAVPlayer/Classes/images.xcassets'
+  s.source_files = 'SwiftAVPlayer/Classes/**/{*.swift,*.xib}'
+  s.resource = 'SwiftAVPlayer/Classes/Resources/Media.xcassets'
   # s.resource_bundles = {
   #   'SwiftAVPlayer' => ['SwiftAVPlayer/Assets/*.png']
   # }

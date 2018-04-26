@@ -1,6 +1,7 @@
 {
   "name": "SwiftAVPlayer",
   "version": "0.1.0",
+  "swift_version": "4.0",
   "summary": "A swift tool for AVFoundation easily to use.",
   "description": "A swift tool for AVFoundation easily to use.",
   "homepage": "https://github.com/Rookieneo/SwiftAVPlayer",
@@ -18,7 +19,8 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "SwiftAVPlayer/Classes/**/*",
+  "source_files": "SwiftAVPlayer/Classes/**/{*.swift,*.xib}",
+  "resources": "SwiftAVPlayer/Classes/Resources/Media.xcassets",
   "dependencies": {
     "SnapKit": [
 
