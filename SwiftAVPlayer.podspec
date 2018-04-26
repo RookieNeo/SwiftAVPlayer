@@ -31,7 +31,7 @@ A swift tool for AVFoundation easily to use.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'SwiftAVPlayer/Classes/**/*'
-  
+  s.resource = 'SwiftAVPlayer/Classes/images.xcassets'
   # s.resource_bundles = {
   #   'SwiftAVPlayer' => ['SwiftAVPlayer/Assets/*.png']
   # }
